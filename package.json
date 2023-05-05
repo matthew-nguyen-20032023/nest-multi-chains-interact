@@ -19,11 +19,17 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@hashgraph/sdk": "2.19.2",
     "@nestjs/common": "9.0.0",
     "@nestjs/core": "9.0.5",
     "@nestjs/platform-express": "9.0.0",
+    "cardano-wallet-js": "1.4.0",
+    "cardanocli-js": "4.1.6",
+    "dotenv": "14.3.2",
+    "prettier": "2.3.2",
     "reflect-metadata": "0.1.13",
-    "rxjs": "7.5.5"
+    "rxjs": "7.5.5",
+    "web3": "1.9.0"
   },
   "devDependencies": {
     "@nestjs/cli": "9.0.0",
