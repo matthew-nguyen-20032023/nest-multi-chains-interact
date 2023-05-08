@@ -20,6 +20,18 @@ export class Hedera {
   }
 
   /**
+   * @description Use when want to change wallet interact with hedera network
+   * @param accountId
+   * @param privateKey
+   */
+  public async setOperator(
+    accountId: string,
+    privateKey: string
+  ): Promise<void> {
+    this.client.setOperator(accountId, privateKey);
+  }
+
+  /**
    * Any logic interacting with smart contract on hedera chain have to call throw this function
    * @param contractId Id of contract after deployed on hedera chain. ex: 0.0.3992423
    * @param functionCalled Name of exist function on smart contract and can be called. ex: Mint
